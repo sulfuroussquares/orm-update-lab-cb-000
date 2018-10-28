@@ -9,7 +9,7 @@ def initialize(id= nil, name, grade)
   @grade = grade
 end
 
-def create_table
+def self.create_table
   sql = <<-SQL
     CREATE TABLE Students (
       id INTEGER PRIMARY KEY,
