@@ -10,7 +10,12 @@ def initialize(id= nil, name, grade)
 end
 
 def self.create_table
+  sql = <<-SQL
+    CREATE TABLE Studentds
+    VALUES (?, ?)
+  SQL
 
+  DB[:conn].execute(sql, self.name, self.album)
 end
 
 end
