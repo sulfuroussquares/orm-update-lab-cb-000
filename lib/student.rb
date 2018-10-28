@@ -27,4 +27,7 @@ def self.drop_table
   DB[:conn].execute(sql)
 end
 
+def self.save
+end
+
 end
