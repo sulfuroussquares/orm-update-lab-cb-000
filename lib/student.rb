@@ -48,8 +48,8 @@ def self.create(name, grade)
 end
 
 def self.new_from_db(row)
-student = Student.new(row[1], row[2], row[0])
-student
+new_student = self.new(row[1], row[2], row[0])
+new_student
 end
 
 def update
